@@ -1,5 +1,5 @@
-Role Name
-=========
+cans.pip-config
+===============
 
 [![Build Status](https://travis-ci.org/cans/pip-config.svg?branch=master)](https://travis-ci.org/cans/pip-config)
 
