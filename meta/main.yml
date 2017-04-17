@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Nicolas CANIARTT
+  description: Simple Ansible Role to Configure PIP
+  company: your company (optional)
+
+  issue_tracker_url: https://github.com/cans/pip-config/issues
+  license: GPLv2
+  min_ansible_version: 2.3  # May work with earlier versions, untested though
+
+  github_branch: master
+
+  platforms:
+  - name: Debian  # Only tested there, happy to add more
+    versions:
+    - jessie
+    - sid
+    - stretch
+
+  galaxy_tags:
+    - 'pip'
+    - 'pip.conf'
+    - 'python'
+
+dependencies: []
