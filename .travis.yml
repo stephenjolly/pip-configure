@@ -26,6 +26,7 @@ script:
   # Lint the role, but we don't want this to fail the build.
   - ansible-lint tests/test.yml || true
   # Basic role syntax check
+  - ls -al ~/.pip
   - ansible-playbook tests/test.yml -i tests/inventory --syntax-check
   - ansible-playbook tests/test.yml -vvv -i tests/inventory --connection=local
 

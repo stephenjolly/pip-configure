@@ -5,6 +5,12 @@
     mode: "{{ pipconfig_dir_mode }}"
     state: directory
 
+- name: Copy PIP config
+  copy:
+    dest: "{{ pipconfig_dir | expanduser + '/' + pipconfig_file }}"
+    mode: "{{ pipconfig_file_mode }}"
+    src: "templates/pip.conf"
+
 - name: Install PIP config
   template:
     dest: "{{ pipconfig_dir | expanduser + '/' + pipconfig_file }}"
