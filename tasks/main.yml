@@ -7,7 +7,7 @@
 
 - name: Install PIP config
   template:
-    dest: "{{ pipconfig_dir + '/' + pipconfig_file }}"
+    dest: "{{ pipconfig_dir | expanduser + '/' + pipconfig_file }}"
     mode: "{{ pipconfig_file_mode }}"
     src: "pip.conf"
 
