@@ -25,6 +25,7 @@
     - role: "pip-configure"
       pipconfig_find_links_urls: "{{ links }}"
       pipconfig_extra_index_urls: "{{ extras }}"
+      become: True
 
   tasks:
     - name: "Get file stats"
