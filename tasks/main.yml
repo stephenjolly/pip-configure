@@ -9,4 +9,4 @@
   template:
     src: "pip.conf"
     dest: "{{ pip_config_dir + '/' + pip_config_file }}"
-    mode: {{ pip_config_mode }}
+    mode: "{{ pip_config_mode }}"
